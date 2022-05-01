@@ -9,6 +9,7 @@ env:
 merge:
   script: |-
     mvn compile
+    mvn test
     java -cp target/classes com.mycompany.app.App
 deploy:
   script: |-
