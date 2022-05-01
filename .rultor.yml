@@ -1,23 +1,9 @@
 architect:
-  - zehaoj
   - avatar46
-
-#install: |
-#  sudo update-java-alternatives -s java-1.8.0-openjdk-amd64
-#
-#env:
-#  MAVEN_OPTS: -XX:MaxPermSize=256m -Xmx1g
 
 merge:
   commanders:
     - avatar46
-  script:
-    - "mvn compile"
-    - "mvn test"
-    - "java -cp target/classes com.mycompany.app.App"
 
-#deploy:
-#  script: |
-#    mvn clean deploy -Pqulice -DskipITs --errors --settings ../settings.xml
-#    mvn clean
-#    s3cmd --no-progress put jcabi-github.xml --config=../s3cfg s3://pdd.teamed.io/jcabi-github.xml
+  script: |
+    ./gradlew test
