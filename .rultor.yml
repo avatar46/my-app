@@ -13,9 +13,9 @@ merge:
     - avatar46
 
   script: |
-    mvn compile
-    mvn test
-    java -cp target/classes com.mycompany.app.App
+    sudo mvn compile
+    sudo mvn test
+    sudo java -cp target/classes com.mycompany.app.App
 
 deploy:
   script: |
