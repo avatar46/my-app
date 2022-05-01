@@ -2,13 +2,13 @@ architect:
   - zehaoj
   - avatar46
 
-install: |-
+install: |
   sudo update-java-alternatives -s java-1.8.0-openjdk-amd64
   pdd --file=/dev/null
 env:
   MAVEN_OPTS: -XX:MaxPermSize=256m -Xmx1g
 merge:
-  script: |-
+  script: |
     mvn compile
     mvn test
     java -cp target/classes com.mycompany.app.App
