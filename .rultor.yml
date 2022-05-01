@@ -11,7 +11,6 @@ architect:
 merge:
   commanders:
     - avatar46
-
   script:
     - "mvn compile"
     - "mvn test"
