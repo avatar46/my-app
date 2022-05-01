@@ -2,4 +2,4 @@
  
 Some test here
 
-ready for merge
+ready for deploy
