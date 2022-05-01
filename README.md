@@ -2,4 +2,4 @@
  
 Some test here
 
-ready for deploy ;)
+ready for deploy :(
