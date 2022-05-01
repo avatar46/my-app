@@ -12,10 +12,10 @@ merge:
   commanders:
     - avatar46
 
-  script: |
-    sudo mvn compile
-    sudo mvn test
-    sudo java -cp target/classes com.mycompany.app.App
+  script:
+    - "mvn compile"
+    - "mvn test"
+    - "java -cp target/classes com.mycompany.app.App"
 
 deploy:
   script: |
