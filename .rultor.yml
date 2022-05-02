@@ -5,5 +5,5 @@ merge:
   commanders:
     - avatar46
 
-  script: |
+  script: |-
     ./gradlew test
